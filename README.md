@@ -1,1 +1,15 @@
-"# Carevator-Blog" 
+# Carvater Blog
+
+Carvater Blog.
+
+## Installation
+
+```
+npm install
+```
+
+## Run Code
+
+```
+npm run start
+```
