@@ -10,3 +10,22 @@
   display: flex;
   width: 100%;
 }
+
+.section-post {
+  margin-top: 9.6rem;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    &_main {
+      color: #2a2a2a;
+      font-size: 4.8rem;
+    }
+
+    &_sub {
+      color: #667085;
+      font-size: 2rem;
+    }
+  }
+}
