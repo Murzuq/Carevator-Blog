@@ -41,6 +41,12 @@
   }
 }
 
+.new-post {
+  &:not(:last-child) {
+    margin-bottom: 9.6rem;
+  }
+}
+
 .post {
   &:not(:last-child) {
     margin-right: 3rem;
