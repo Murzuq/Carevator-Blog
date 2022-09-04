@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+Pro&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@500&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
     <title>Carevator Blog</title>
   </head>
   <body>
-    <header class="header">Header</header>
+    <header class="header">
+      <div class="navigation">
+        <nav class="navigation__nav">
+          <a href="/">
+            <img src="img/logo.png" alt="Logo" class="navigation__logo" />
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#" class="search">
+          <button class="search__button">
+            <img src="img/icon-search.svg" alt="" class="search__icon" />
+          </button>
+          <input type="text" class="search__input" placeholder="Search" />
+        </form>
+      </div>
+    </header>
     <main>
       <section class="section-blog-section">
         <div class="section-post__head">
