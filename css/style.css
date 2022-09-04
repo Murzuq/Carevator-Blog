@@ -64,7 +64,8 @@ main {
 
 .post__text_category {
   font-size: 1.5rem;
-  color: #8d9bb8; }
+  color: #8d9bb8;
+  text-transform: uppercase; }
 
 .post__text_heading {
   font-size: 3rem;
