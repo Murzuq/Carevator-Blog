@@ -13,7 +13,8 @@ html {
   font-family: "DM Serif Display", serif; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1.8rem; }
 
 main {
   padding: 8rem 7.2rem; }
@@ -35,18 +36,28 @@ main {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
+  color: #4a4a4a;
   text-transform: uppercase;
   margin-top: 4.8rem; }
 
 .head-post__text_heading {
   margin-top: 2.4rem;
-  font-size: 3rem; }
+  font-size: 3rem;
+  color: #101828;
+  text-transform: capitalize; }
 
 .head-post__text_content {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.8rem;
+  color: #667085;
   margin-top: 1.2rem;
-  line-height: 28px; }
+  line-height: 2.8rem; }
+
+.post:not(:last-child) {
+  margin-right: 3rem; }
+
+.post__img {
+  height: 376px; }
 
 .header {
   height: 8rem;
