@@ -117,7 +117,6 @@
 
 .section-details {
   &__head {
-    // background-color: saddlebrown;
     padding: 0 8rem;
     margin-bottom: 5.5rem;
     @include respond(phone) {
@@ -148,7 +147,6 @@
 
       & > :not(:last-child)::after {
         content: " ";
-        // background-color: red;
         margin-right: 3rem;
       }
 
@@ -182,13 +180,10 @@
 
   &__category {
     margin: 0 15rem;
-    // background-color: red;
     display: flex;
     border-top: 1px solid #b0b0b0;
 
     &_btn {
-      // height: 6.8rem;
-      // width: 18.4rem;
       color: #667085;
       font-size: 1.8rem;
       font-family: "Source Sans Pro", sans-serif;
@@ -197,15 +192,12 @@
       border: 1px solid #cccccc;
       border-radius: 0.8rem;
       padding: 2rem 4.8rem;
-      // margin-right: 2.8rem;
-      // margin-top: 3.6rem;
       margin: 2.8rem 3.6rem;
     }
   }
   @include respond(phone) {
     &__category {
       margin: 0;
-      // background-color: red;
       display: flex;
       align-items: center;
       justify-items: center;
@@ -214,23 +206,14 @@
       border-top: 1px solid #b0b0b0;
 
       &_btn {
-        // height: 3rem;
-        // width: 25%;
         color: #667085;
-        // font-size: 1.2rem;
         font-family: "Source Sans Pro", sans-serif;
         text-decoration: none;
         text-transform: uppercase;
         border: 1px solid #cccccc;
         border-radius: 0.4rem;
-        // margin: 0;
         margin: 1.6rem 0 0 0;
-        &:not(:first-child) {
-        }
         padding: 1rem 2rem;
-        // margin: 0;
-        // margin-top: 3.6rem;
-        // margin: 1rem 2.4rem;
       }
     }
   }
