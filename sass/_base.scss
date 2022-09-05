@@ -8,11 +8,23 @@
 *::after {
   box-sizing: inherit;
 }
-
 html {
-  box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
   font-family: "DM Serif Display", serif;
+
+  @include respond(tab-land) {
+    //width < 1200
+    font-size: 56.25%; //1rem = 9px; 10px/9px = 56.25%
+  }
+
+  @include respond(tab-port) {
+    //width < 900
+    font-size: 50%; //1rem = 8px; 8px/16px = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px; 10px/16px = 62.5%
+  }
 
   p {
     font-family: "Source Sans Pro", sans-serif;
@@ -26,4 +38,8 @@ body {
 
 main {
   padding: 8rem 7.2rem;
+
+  @include respond(phone) {
+    padding: 4.6rem 2.5rem;
+  }
 }
