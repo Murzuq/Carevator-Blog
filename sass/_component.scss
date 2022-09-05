@@ -6,6 +6,12 @@
       width: 100%;
       height: 35rem;
     }
+
+    @include respond(phone) {
+      width: 100%;
+      height: 100%;
+      margin-right: 0;
+    }
   }
 
   &__right {
@@ -13,6 +19,11 @@
     &_img {
       width: 100%;
       height: 35rem;
+      @include respond(phone) {
+        width: 100%;
+        height: 100%;
+        margin-top: 4rem;
+      }
     }
   }
 
@@ -45,11 +56,40 @@
   &:not(:last-child) {
     margin-bottom: 9.6rem;
   }
+
+  &__link {
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+      margin-top: 2.15rem;
+      &_btn {
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 1.6rem;
+        color: #4a4a4a;
+        margin-bottom: 0.3rem;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
 }
 
 .post {
   &:not(:last-child) {
     margin-right: 3rem;
+  }
+
+  @include respond(phone) {
+    &:last-child {
+      display: none;
+    }
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+    &:nth-child(2) {
+      margin-top: 4rem;
+    }
   }
 
   &__img {
@@ -80,6 +120,10 @@
     // background-color: saddlebrown;
     padding: 0 8rem;
     margin-bottom: 5.5rem;
+    @include respond(phone) {
+      margin-bottom: 1.2rem;
+      padding: 0;
+    }
 
     &_category {
       font-size: 1.6rem;
@@ -92,6 +136,10 @@
       font-size: 6rem;
       color: #101828;
       margin-bottom: 1.6rem;
+      @include respond(phone) {
+        font-size: 2.2rem;
+        margin-bottom: 1.2rem;
+      }
     }
 
     &_title {
@@ -112,19 +160,23 @@
 
   &__img {
     width: 100%;
-    // height: 45rem;
+    height: 23.5rem;
   }
 
   &__content {
     margin: 5.6rem 15rem;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
 
     &_img {
       height: 21.1rem;
       width: 100%;
       margin: 3.6rem 0;
+    }
+
+    @include respond(phone) {
+      margin: 0;
     }
   }
 
@@ -135,18 +187,51 @@
     border-top: 1px solid #b0b0b0;
 
     &_btn {
-      height: 6.8rem;
-      width: 18.4rem;
+      // height: 6.8rem;
+      // width: 18.4rem;
       color: #667085;
       font-size: 1.8rem;
       font-family: "Source Sans Pro", sans-serif;
       text-decoration: none;
       text-transform: uppercase;
       border: 1px solid #cccccc;
-      border-radius: 8px;
+      border-radius: 0.8rem;
       padding: 2rem 4.8rem;
-      margin-right: 2.8rem;
-      margin-top: 3.6rem;
+      // margin-right: 2.8rem;
+      // margin-top: 3.6rem;
+      margin: 2.8rem 3.6rem;
+    }
+  }
+  @include respond(phone) {
+    &__category {
+      margin: 0;
+      // background-color: red;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border-top: 1px solid #b0b0b0;
+
+      &_btn {
+        // height: 3rem;
+        // width: 25%;
+        color: #667085;
+        // font-size: 1.2rem;
+        font-family: "Source Sans Pro", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #cccccc;
+        border-radius: 0.4rem;
+        // margin: 0;
+        margin: 1.6rem 0 0 0;
+        &:not(:first-child) {
+        }
+        padding: 1rem 2rem;
+        // margin: 0;
+        // margin-top: 3.6rem;
+        // margin: 1rem 2.4rem;
+      }
     }
   }
 
@@ -164,13 +249,34 @@
       width: 3.6rem;
     }
   }
+
+  @include respond(phone) {
+    &__social-icon {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+      top: 0;
+      right: 0;
+      position: relative;
+      height: auto;
+      width: 14.4rem;
+      margin-bottom: 4.4rem;
+      margin-top: 5.8rem;
+
+      &_icon {
+        height: 2.4rem;
+        width: 2.4rem;
+      }
+    }
+  }
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 1rem;
 
   &__logo {
     margin-right: 9rem;
