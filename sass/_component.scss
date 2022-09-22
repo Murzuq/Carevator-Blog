@@ -81,7 +81,7 @@
   }
 }
 
-.post {
+a {
   &:not(:last-child) {
     margin-right: 3rem;
   }
@@ -97,35 +97,36 @@
       margin-top: 4rem;
     }
   }
-
-  &__img {
-    width: 100%;
-  }
-
-  &__text {
-    margin: 2rem 0 0 0;
-
-    &_category {
-      font-size: 1.5rem;
-      letter-spacing: 0.1rem;
-      font-weight: 400;
-      color: #8d9bb8;
-      text-transform: uppercase;
+  .post {
+    &__img {
+      width: 100%;
     }
 
-    &_heading {
-      font-size: 3rem;
-      line-height: 3.2rem;
-      font-weight: 400;
-      margin: 1.3rem 0 1rem 0;
-      color: #2a2a2a;
-    }
+    &__text {
+      margin: 2rem 0 0 0;
 
-    &_content {
-      font-size: 1.8rem;
-      line-height: 2.3rem;
-      margin: 0.7rem 0 0 0;
-      color: #667085;
+      &_category {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-weight: 400;
+        color: #8d9bb8;
+        text-transform: uppercase;
+      }
+
+      &_heading {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+        margin: 1.3rem 0 1rem 0;
+        color: #2a2a2a;
+      }
+
+      &_content {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        margin: 0.7rem 0 0 0;
+        color: #667085;
+      }
     }
   }
 }

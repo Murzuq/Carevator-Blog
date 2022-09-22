@@ -11,6 +11,10 @@
   display: flex;
   width: 100%;
 
+  a {
+    text-decoration: none;
+  }
+
   @include respond(phone) {
     display: block;
     width: 100%;
@@ -37,7 +41,10 @@
     }
 
     &_sub {
-      color: #667085;
+      a {
+        text-decoration: none;
+        color: #667085;
+      }
       font-size: 1.67rem;
       line-height: 2.1rem;
     }
