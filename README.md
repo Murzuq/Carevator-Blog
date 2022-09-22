@@ -1,6 +1,6 @@
 # Carvater Blog
 
-Carvater Blog.
+Carvater Blog is a blog Web App.
 
 ## Installation
 
@@ -12,4 +12,10 @@ npm install
 
 ```
 npm run start
+```
+
+or
+
+```
+npm start
 ```
